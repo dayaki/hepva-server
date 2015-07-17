@@ -1,7 +1,7 @@
 var mongo = require('mongodb').MongoClient,
     client = require('socket.io').listen(8080).sockets;
 
-mongo.connect('mongodb://127.0.0.1/hepva', function(err, db) {
+mongo.connect('mongodb://104.131.222.95/hepva', function(err, db) {
   if (err) throw err;
 
   client.on('connection', function(socket) {
